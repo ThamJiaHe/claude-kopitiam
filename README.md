@@ -6,6 +6,29 @@ A **non-destructive global rules layer** for Claude Code — 7 plug-in-ready `~/
 
 ---
 
+## What This Does for You Every Day
+
+Most Claude Code users rely on plugins and `/slash` commands (Skills.md) to get specialist behaviour. That works — but it has a cost: **you have to remember to invoke them**. A skill doesn't load unless you type the command. An agent doesn't run unless you know it exists.
+
+Claude Kopitiam flips this. The rules layer is always-on context that Claude reads before every response. You don't invoke anything.
+
+| Scenario | Without kopitiam | With kopitiam |
+|---|---|---|
+| You write a Python function | Claude answers generically | `router.md` triggers `python-reviewer` automatically |
+| You start planning a feature | Claude dives straight into implementation | `router.md` routes to `brainstorming` → `writing-plans` first |
+| You touch auth or tokens | Claude has no security context unless you ask | `security.md` is already in context — guards fire by default |
+| You write a commit message | Any format accepted | `git-workflow-extended.md` enforces conventional commits silently |
+| You update your CLAUDE.md template | Your personal rules get overwritten | Rules files are separate — pull updates freely, personal config untouched |
+| Claude is 85% through context | No warning, session degrades silently | `performance.md` triggers `/save-session` + `/compact` discipline |
+
+**vs. Plugins:** Plugins add tools and hooks. Kopitiam adds *standing instructions* — it shapes how Claude behaves on every task without requiring you to know which plugin to call.
+
+**vs. Skills.md `/slash` commands:** Skills are on-demand encyclopedias you pull when you know you need them. Rules files are the behavioural defaults that apply when you don't think to ask — which is most of the time.
+
+The two work best together. Skills go deep on a domain when you call them. Rules files ensure Claude is already oriented correctly before you even type.
+
+---
+
 ## Why This Exists
 
 | Problem | Status in the Ecosystem |
