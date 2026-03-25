@@ -6,6 +6,16 @@ An **always-on intelligent workflow layer** for Claude Code. Seven rules files t
 
 ---
 
+## The Companion Knowledge Layer
+
+These rules reference agents and skills documented in the **[Claude Prompt Engineering Guide](https://github.com/ThamJiaHe/claude-prompt-engineering-guide)** — the full reference for prompt patterns, MCP, Skills, Claude Code best practices, and the broader Claude and Claude Code ecosystem.
+
+[![Claude Prompt Engineering Guide](https://img.shields.io/badge/Companion_Docs-Claude_Prompt_Engineering_Guide-E94560?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThamJiaHe/claude-prompt-engineering-guide)
+
+Install kopitiam for the always-on behaviour layer. Read the guide for the deep knowledge behind it.
+
+---
+
 ## The Problem
 
 Most developers are using Claude Code at a fraction of its capability.
